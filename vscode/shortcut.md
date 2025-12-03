@@ -21,7 +21,7 @@ ctl + shift + `
 ctrl + 1
 ````
 ### Copilot Chat
-- show/hide  ****
+- show/hide
 ````
 ctrl + alt + i
 ````
@@ -47,7 +47,7 @@ ctrl + k -> e
 ````
 ctrl + k -> z
 ````
-#### Markdown Preview
+### Markdown Preview
 ````
 ctrl + shift + v
 ````
