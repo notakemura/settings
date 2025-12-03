@@ -1,0 +1,15 @@
+{
+    "workbench.editor.showTabs": "none",
+    "workbench.editor.enablePreview": false,
+    "editor.mouseWheelZoom": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.minimap.enabled": false,
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "files.autoSave": "afterDelay",
+    "gitlens.hovers.currentLine.over": "line",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "git.autofetch": true,
+    "sql-formatter.uppercase": true
+}
