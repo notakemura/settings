@@ -14,6 +14,7 @@
   - [Editor](#editor)
     - [Select](#select)
     - [Move](#move)
+    - [Focus](#focus)
     - [Zen Mode](#zen-mode)
     - [Markdown Preview](#markdown-preview)
 
@@ -90,6 +91,20 @@ shift + a
 - bulk move
 ````
 ctrl + [ or ]
+````
+
+### Focus
+- focus Sidebar (Explorer)
+````
+ctrl + 0
+````
+- focus Terminal
+````
+ctrl + `
+````
+- focus Editor (from Sidebar/Terminal)
+````
+ctrl + 1
 ````
 
 ### Zen Mode
