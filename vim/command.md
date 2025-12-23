@@ -31,12 +31,13 @@
 
 ## 検索 (Search)
 
-| コマンド (Command)   | 説明 (Description)                                                 |
-| :------------------- | :----------------------------------------------------------------- |
-| `/{pattern} + Enter` | 文字列を前方検索してカーソル移動 (Search forward and move cursor)  |
-| `?{pattern} + Enter` | 文字列を後方検索してカーソル移動 (Search backward and move cursor) |
-| `n`                  | 次の検索結果へ移動 (Move to the next match)                        |
-| `N`                  | 前の検索結果へ移動 (Move to the previous match)                    |
+| コマンド (Command)           | 説明 (Description)                                                           |
+| :--------------------------- | :--------------------------------------------------------------------------- |
+| `/{pattern} + Enter`         | 文字列を前方検索してカーソル移動 (Search forward and move cursor)            |
+| `?{pattern} + Enter`         | 文字列を後方検索してカーソル移動 (Search backward and move cursor)           |
+| `/` → `Ctrl + r` → `*` / `+` | クリップボードの内容を検索欄に貼り付け (Paste clipboard content into search) |
+| `n`                          | 次の検索結果へ移動 (Move to the next match)                                  |
+| `N`                          | 前の検索結果へ移動 (Move to the previous match)                              |
 
 ## 選択 (Selection)
 
@@ -50,17 +51,24 @@
 | `ggVG`             | 全選択 (Select all)                                   |
 | `Esc`              | 選択解除 (Exit visual mode)                           |
 
-### 複数行・範囲選択 (Multi-line / Range Selection)
+### 範囲選択 (Range Selection)
 
 | コマンド (Command) | 説明 (Description)                                          |
 | :----------------- | :---------------------------------------------------------- |
-| `V` -> `j`/`k`     | 行単位で上下に選択範囲を広げる (Expand selection line-wise) |
-| `v` -> `iw`        | カーソル下の単語を選択 (Select inner word)                  |
-| `v` -> `i"`        | `"` で囲まれた範囲を選択 (Select inside double quotes)      |
+| `V` → `j`/`k`      | 行単位で上下に選択範囲を広げる (Expand selection line-wise) |
+| `v` → `iw`         | カーソル下の単語を選択 (Select inner word)                  |
+| `v` → `i"`         | `"` で囲まれた範囲を選択 (Select inside double quotes)      |
+
+### 矩形選択 (Visual Block Mode)
+
+| コマンド (Command)                        | 説明 (Description)                                                                      |
+| :---------------------------------------- | :-------------------------------------------------------------------------------------- |
+| `Ctrl + v` → `j`/`k` → `I` → text → `Esc` | 選択した複数行の左端（先頭）に一括入力 (Insert text at the beginning of multiple lines) |
+| `Ctrl + v` → `j`/`k` → `A` → text → `Esc` | 選択した複数行の右端（末尾）に一括入力 (Append text at the end of multiple lines)       |
 
 ## 編集 (Editing)
 
-### 基本的な編集 (Basic Editing)
+### 挿入・削除 (Insert / Delete)
 
 | コマンド (Command) | 説明 (Description)                             |
 | :----------------- | :--------------------------------------------- |
@@ -70,10 +78,8 @@
 | `O`                | 上に行を挿入して開始 (Open new line above)     |
 | `x`                | 1文字削除 (Delete character)                   |
 | `dd`               | 1行削除 (Delete line)                          |
-| `u`                | 元に戻す (Undo)                                |
-| `Ctrl + r`         | やり直し (Redo)                                |
 
-### コピー・切り取り・貼り付け (Copy, Cut, Paste)
+### コピー・切り取り・貼り付け (Copy / Cut / Paste)
 
 | コマンド (Command) | 説明 (Description)                            |
 | :----------------- | :-------------------------------------------- |
@@ -83,16 +89,9 @@
 | `p`                | カーソルの後ろに貼り付け (Paste after cursor) |
 | `P`                | カーソルの前に貼り付け (Paste before cursor)  |
 
-### 矩形選択の活用 (Using Visual Block Mode)
+### 元に戻す・やり直し (Undo / Redo)
 
-| コマンド (Command)                        | 説明 (Description)                                                                      |
-| :---------------------------------------- | :-------------------------------------------------------------------------------------- |
-| `Ctrl + v` → `j`/`k` → `I` → text → `Esc` | 選択した複数行の左端（先頭）に一括入力 (Insert text at the beginning of multiple lines) |
-| `Ctrl + v` → `j`/`k` → `A` → text → `Esc` | 選択した複数行の右端（末尾）に一括入力 (Append text at the end of multiple lines)       |
-
-## 行単位で複数行選択 (Line-wise Multi-line Selection)
-
-| コマンド (Command) | 説明 (Description)                                                                                |
-| :----------------- | :------------------------------------------------------------------------------------------------ |
-| `V`                | ノーマルモードで `V` を押すと行単位のビジュアルモードに入ります。`j` / `k` で選択を拡張できます。 |
-| `ggVG`             | ファイル全体を行単位で選択します（先頭へ `gg` → `V` → 最後まで `G`）。                            |
+| コマンド (Command) | 説明 (Description) |
+| :----------------- | :----------------- |
+| `u`                | 元に戻す (Undo)    |
+| `Ctrl + r`         | やり直し (Redo)    |
