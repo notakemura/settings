@@ -89,6 +89,17 @@
 | `p`                | カーソルの後ろに貼り付け (Paste after cursor) |
 | `P`                | カーソルの前に貼り付け (Paste before cursor)  |
 
+### 行の移動 (Move Lines)
+
+| コマンド (Command) | 説明 (Description)                                 |
+| :----------------- | :------------------------------------------------- |
+| `:m +1`            | 現在の行を1行下に移動 (Move current line down)     |
+| `:m -2`            | 現在の行を1行上に移動 (Move current line up)       |
+| `ddp`              | 現在の行を1行下に移動 (Cut and paste line down)    |
+| `ddkP`             | 現在の行を1行上に移動 (Cut and paste line up)      |
+| `V` → `:m '>+1`    | 選択した行を1行下に移動 (Move selected lines down) |
+| `V` → `:m '<-2`    | 選択した行を1行上に移動 (Move selected lines up)   |
+
 ### 元に戻す・やり直し (Undo / Redo)
 
 | コマンド (Command) | 説明 (Description) |
