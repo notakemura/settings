@@ -1,6 +1,7 @@
 {
     "workbench.editor.showTabs": "none",
     "workbench.editor.enablePreview": false,
+    "workbench.activityBar.location": "top",
     "editor.mouseWheelZoom": true,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
